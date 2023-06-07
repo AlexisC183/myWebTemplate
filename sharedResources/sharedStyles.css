@@ -1,0 +1,86 @@
+/*In mobile, 100px are 150px*/
+
+*{
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    line-height: 2;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+body{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+body > div{
+    border:1px solid;
+    padding: 9px 30px;
+    width: 1280px;
+}
+
+.header img{
+    height: 50px;
+}
+
+.body{
+    border-top: none;
+}
+
+hr{
+    margin: 16px 0px;
+}
+
+p:first-of-type ~ p{
+    margin-top: 16px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.resizableTable{
+    table-layout: fixed;
+    width: 100%;
+}
+
+.resizableTable tr:first-child{
+    font-weight: bold;
+}
+
+.resizableTable td{
+    border:1px solid;
+    padding: 4px 6px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.tab{
+    display: block;
+    margin-left: 40px;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+.fixedSize{
+    overflow: auto;
+}
+
+@media screen and (max-width:1296px){
+    body > div{
+        width: 100%;
+    }
+}
